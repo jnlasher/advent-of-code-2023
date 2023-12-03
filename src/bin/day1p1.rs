@@ -42,16 +42,18 @@ mod tests {
 
     #[test]
     fn test_join_first_last() {
-        let mut result = join_first_last("1abc2");
+        let tests: Vec<&str> = INPUT.split("\n").collect();
+
+        let mut result = join_first_last(tests[0]);
         assert_eq!(result, 12);
 
-        result = join_first_last("pqr3stu8vwx");
+        result = join_first_last(tests[1]);
         assert_eq!(result, 38);
 
-        result = join_first_last("a1b2c3d4e5f");
+        result = join_first_last(tests[2]);
         assert_eq!(result, 15);
 
-        result = join_first_last("treb7uchet");
+        result = join_first_last(tests[3]);
         assert_eq!(result, 77);
     }
 
