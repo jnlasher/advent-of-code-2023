@@ -12,11 +12,9 @@ pub fn main() {
 
     input.split("\n").for_each(|line| {
         let x: Vec<&str> = line.split(':').collect();
-        if x.len() > 1 {
-            if is_line_valid(x[1]) {
-                if let Some(id) = parse_game_id(x[0]) {
-                    sum += id;
-                }
+        if is_line_valid(x[1]) {
+            if let Some(id) = parse_game_id(x[0]) {
+                sum += id;
             }
         }
     });

@@ -7,9 +7,7 @@ pub fn main() {
 
     input.split("\n").for_each(|line| {
         let x: Vec<&str> = line.split(':').collect();
-        if x.len() > 1 {
-            sum += compute_power(x[1]);
-        }
+        sum += compute_power(x[1]);
     });
 
     println!("{}", sum);
