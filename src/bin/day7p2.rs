@@ -6,7 +6,7 @@ pub fn main() {
     let input = fs::read_to_string("./inputs/day7.txt").expect("Failed to read input");
     let hands = read_hands(&input);
     let total_winnings = get_winnings(hands);
-    println!("Total winnigs: {}", total_winnings);
+    println!("Total winnings: {}", total_winnings);
 }
 
 #[derive(PartialEq, Eq, PartialOrd, Ord, Debug)]
