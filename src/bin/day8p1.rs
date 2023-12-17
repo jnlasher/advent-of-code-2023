@@ -101,13 +101,4 @@ mod tests {
         let steps = follow_instructions(REPEATING_MAP);
         assert_eq!(steps, 6);
     }
-
-    #[test]
-    fn test_mod() {
-        assert_eq!(0 % 3, 0);
-        assert_eq!(1 % 3, 1);
-        assert_eq!(2 % 3, 2);
-        assert_eq!(3 % 3, 0);
-        assert_eq!(4 % 3, 1);
-    }
 }
